@@ -34,3 +34,6 @@ gnatsd
 
 # coverage
 coverage.out
+
+*.dev.conf
+*.gnatsd.log

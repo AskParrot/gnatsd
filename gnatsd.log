@@ -1,0 +1,28 @@
+[4986] 2015/10/20 18:05:34.834897 [INF] Starting gnatsd version 0.6.8
+[4986] 2015/10/20 18:05:34.838389 [INF] Starting http monitor on port 8222
+[4986] 2015/10/20 18:05:34.839458 [INF] Listening for route connections on 127.0.0.1:4244
+[4986] 2015/10/20 18:05:34.839563 [INF] Listening for client connections on 0.0.0.0:4242
+[4986] 2015/10/20 18:05:34.839895 [INF] gnatsd is ready
+[4986] 2015/10/20 18:05:36.833382 [DBG] 127.0.0.1:60572 - cid:1 - Client connection created
+[4986] 2015/10/20 18:05:36.834025 [TRC] 127.0.0.1:60572 - cid:1 - ->> [CONNECT {"verbose":false,"pedantic":false,"ssl_required":false,"name":"","lang":"go","version":"1.1.2"}]
+[4986] 2015/10/20 18:05:36.834117 [TRC] 127.0.0.1:60572 - cid:1 - ->> [PING]
+[4986] 2015/10/20 18:05:36.834133 [TRC] 127.0.0.1:60572 - cid:1 - <<- [PONG]
+[4986] 2015/10/20 18:05:36.834247 [TRC] 127.0.0.1:60572 - cid:1 - ->> [PUB hitesh 2]
+[4986] 2015/10/20 18:05:36.834273 [TRC] 127.0.0.1:60572 - cid:1 - ->> MSG_PAYLOAD: [hi]
+[4986] 2015/10/20 18:05:36.834863 [DBG] 127.0.0.1:60572 - cid:1 - Client connection closed
+[4986] 2015/10/20 18:07:27.862023 [DBG] 127.0.0.1:61882 - cid:2 - Client connection created
+[4986] 2015/10/20 18:07:27.864937 [TRC] 127.0.0.1:61882 - cid:2 - ->> [CONNECT {"verbose":false,"pedantic":false,"ssl_required":false,"name":"","lang":"go","version":"1.1.2"}]
+[4986] 2015/10/20 18:07:27.865013 [TRC] 127.0.0.1:61882 - cid:2 - ->> [PING]
+[4986] 2015/10/20 18:07:27.865026 [TRC] 127.0.0.1:61882 - cid:2 - <<- [PONG]
+[4986] 2015/10/20 18:07:27.865151 [TRC] 127.0.0.1:61882 - cid:2 - ->> [PUB hitesh 2]
+[4986] 2015/10/20 18:07:27.865170 [TRC] 127.0.0.1:61882 - cid:2 - ->> MSG_PAYLOAD: [hi]
+[4986] 2015/10/20 18:07:27.865833 [DBG] 127.0.0.1:61882 - cid:2 - Client connection closed
+[4986] 2015/10/20 18:08:17.323083 [DBG] 127.0.0.1:62462 - cid:3 - Client connection created
+[4986] 2015/10/20 18:08:17.325816 [TRC] 127.0.0.1:62462 - cid:3 - ->> [CONNECT {"verbose":false,"pedantic":false,"ssl_required":false,"name":"","lang":"go","version":"1.1.2"}]
+[4986] 2015/10/20 18:08:17.325862 [TRC] 127.0.0.1:62462 - cid:3 - ->> [PING]
+[4986] 2015/10/20 18:08:17.325871 [TRC] 127.0.0.1:62462 - cid:3 - <<- [PONG]
+[4986] 2015/10/20 18:08:17.326001 [TRC] 127.0.0.1:62462 - cid:3 - ->> [PUB hitesh 2]
+[4986] 2015/10/20 18:08:17.326020 [TRC] 127.0.0.1:62462 - cid:3 - ->> MSG_PAYLOAD: [hi]
+[4986] 2015/10/20 18:08:17.326658 [DBG] 127.0.0.1:62462 - cid:3 - Client connection closed
+[4986] 2015/10/20 18:08:42.434331 [DBG] Trapped Signal; interrupt
+[4986] 2015/10/20 18:08:42.434361 [INF] Server Exiting..
