@@ -60,7 +60,7 @@ func main() {
 
 	server.On("connection", func(so socketio.Socket) {
 
-		userid := nil
+		//userid := nil
 		//fmt.Print(reflect.TypeOf(so))
 		token := so.Request().FormValue("token")
 		if len(token) < 1 {
@@ -76,7 +76,7 @@ func main() {
 			if err != nil {
 				so.Close()
 			}
-			userid = userData.Claims["id"]
+			userid := userData.Claims["id"]
 		}
 
 		so.On("join", func(room string) {
