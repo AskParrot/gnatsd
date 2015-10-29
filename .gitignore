@@ -37,3 +37,4 @@ coverage.out
 
 *.dev.conf
 *.gnatsd.log
+gnatsd.pid
