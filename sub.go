@@ -79,7 +79,7 @@ func main() {
 			userid := userData.Claims["id"]
 		}
 
-		nc.Subsribe(userid, func(msg *nats.Msg) {
+		nc.Subscribe(userid, func(msg *nats.Msg) {
 			so.Emit(userid, msg)
 		})
 		so.On("join", func(room string) {
