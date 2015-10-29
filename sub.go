@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"flag"
-	"fmt"
+	//"fmt"
 	"github.com/AskParrot/go-socket.io"
 	"github.com/AskParrot/nats"
 	"github.com/dgrijalva/jwt-go"
