@@ -73,6 +73,7 @@ func main() {
 				}
 				return []byte("thisisreallybigandsecurekey"), nil
 			})
+			fmt.Println(userData,err)
 			if err != nil {
 				fmt.Println(err)
 				so.Close()
@@ -119,7 +120,7 @@ func main() {
 
 	http.Handle("/socket.io/", server)
 	//http.Handle("/", http.FileServer(http.Dir("./asset")))
-	log.Println("Serving at localhost:5000...")
+	log.Println("Serving at localhost:8989...")
 	log.Fatal(http.ListenAndServe(":8989", nil))
 
 	//log.Printf("Listening on [%s]\n", subj)
