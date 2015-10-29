@@ -64,7 +64,7 @@ func main() {
 		//fmt.Print(reflect.TypeOf(so))
 		token := so.Request().FormValue("token")
 		if len(token) < 1 {
-			fmt.Println("TOKEN NOT FOUND")
+			fmt.Println("TOKEN NOT FOUND",token)
 			so.Close()
 		} else {
 
