@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"flag"
-	//"fmt"
+	"fmt"
 	"github.com/AskParrot/go-socket.io"
 	"github.com/AskParrot/nats"
 	"github.com/dgrijalva/jwt-go"
@@ -74,6 +74,7 @@ func main() {
 				return []byte("thisisreallybigandsecurekey"), nil
 			})
 			if err != nil {
+				fmt.Println(err)
 				so.Close()
 			}
 			userid := userData.Claims["id"]
