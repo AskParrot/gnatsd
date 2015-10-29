@@ -77,10 +77,15 @@ func main() {
 				so.Close()
 			}
 			userid := userData.Claims["id"]
-
-			nc.Subscribe(userid, func(msg *nats.Msg) {
-				so.Emit(userid, msg)
-			})
+			if str, ok := userid.(string); ok {
+				/* act on str */
+				nc.Subscribe(str, func(msg *nats.Msg) {
+					so.Emit(str, msg)
+				})
+			} else {
+				/* not string */
+				panic("OOPS")
+			}
 		}
 
 		so.On("join", func(room string) {
